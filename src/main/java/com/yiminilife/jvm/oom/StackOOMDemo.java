@@ -5,7 +5,7 @@ package com.yiminilife.jvm.oom;
  * date: 2019/12/11
  * description:
  * jvm param
- * -XX:ThreadStackSize=1m
+ * -XX:ThreadStackSize=1m -XX:+PrintGCDetails -Xloggc:gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./ -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
  */
 public class StackOOMDemo {
     public static long counter = 0;

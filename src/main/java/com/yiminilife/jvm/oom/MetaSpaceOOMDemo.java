@@ -12,7 +12,7 @@ import java.util.Objects;
  * date: 2019/12/11
  * description:
  * jvm param
- * -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m
+ *  -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:MetaspaceSize=10m -XX:MaxMetaspaceSize=10m -XX:+PrintGCDetails -Xloggc:gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./
  */
 public class MetaSpaceOOMDemo {
     public static void main(String[] args) {

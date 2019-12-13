@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * date: 2019/12/11
  * description:
  * jvm param
- * -Xms10m -Xmx10m
+ * -Xms10m -Xmx10m -XX:+PrintGCDetails -Xloggc:gc.log -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=./ -XX:+UseParNewGC -XX:+UseConcMarkSweepGC
  */
 public class HeapOOMDemo {
 
